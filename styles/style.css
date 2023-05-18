@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    padding: 2px;
+    font-family: 'Permanent Marker',cursive;
+    color: white;
+}
+
+.title > h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+section {
+    
+    left: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 200px;
+    row-gap: 50px;
+}
+
+section > div {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
