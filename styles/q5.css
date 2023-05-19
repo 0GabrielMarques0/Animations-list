@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(150, 150, 150);
+    animation: girar 3s ease-in-out infinite;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(45deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+.home {
+    display: flex;
+    position: fixed;
+    top: 650px;
+    right: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}

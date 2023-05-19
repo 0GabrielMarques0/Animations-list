@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: 0;
+    height: 0;
+    background-color: rgb(255, 255, 255);
+    animation: aparecer 5s linear infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    50%{
+        width: 100px;
+        height: 100px;
+        background-color: blue  ;
+    }
+    100%{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+    
+}
+
+.home {
+    display: flex;
+    position: fixed;
+    top: 650px;
+    right: 200px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}
