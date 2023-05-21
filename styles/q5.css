@@ -27,10 +27,10 @@ body {
 }
 
 .home {
+    position: absolute;
+    top: 80%;
+    right: 10%;
     display: flex;
-    position: fixed;
-    top: 650px;
-    right: 200px;
     justify-content: center;
     align-items: center;
     width: 80px;

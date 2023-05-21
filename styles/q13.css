@@ -6,17 +6,44 @@ body {
     align-items: center;
 }
 
-.circle{
+.box{
+    position: relative;
+    margin: 10px;
     width: 200px;
     height: 200px;
-    border-radius: 100px;
     background-color: rgb(150, 150, 150) ;
 }
 
-.circle:hover{
-    transition: 3.5s;
-    background-color: white;
-    transform: scale(3.0);
+.a{
+    animation: movimento 4s ease infinite;
+}
+
+.b{
+    animation: movimento 4s ease infinite;
+    animation-delay: 2s;
+}
+
+.c {
+    animation: movimento 4s ease infinite;
+    animation-delay: 4s;
+}
+
+@keyframes movimento {
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 200px;
+    }
+    50%{
+        top: 0;
+    }
+    75%{
+        top: -200px;
+    }
+    100%{
+        top: 0;
+    }
 }
 
 .home {

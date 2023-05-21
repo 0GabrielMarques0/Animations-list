@@ -6,17 +6,34 @@ body {
     align-items: center;
 }
 
-.circle{
+.icon > img{
+    position: relative;
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background-color: rgb(150, 150, 150) ;
+    animation: mover 3s linear ;
 }
 
-.circle:hover{
-    transition: 3.5s;
-    background-color: white;
-    transform: scale(3.0);
+@keyframes mover  {
+    0%{
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+    }
+    50%{
+        bottom: 270px;
+        right: 630px;
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        bottom: 270px;
+        right: 630px;
+        width: 70px;
+        height: 70px;
+    }
+   
 }
 
 .home {

@@ -6,17 +6,25 @@ body {
     align-items: center;
 }
 
-.circle{
+.box{
+    position: relative;
     width: 200px;
     height: 200px;
-    border-radius: 100px;
-    background-color: rgb(150, 150, 150) ;
+    background-color: rgb(255, 255, 255);
+    animation: girar-pulsar 5s ease-in-out infinite;
 }
 
-.circle:hover{
-    transition: 3.5s;
-    background-color: white;
-    transform: scale(3.0);
+@keyframes girar-pulsar {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg) scale(1.6);
+    }
+    100%{
+        transform: rotate(360deg) scale(1.0);
+    }
+    
 }
 
 .home {

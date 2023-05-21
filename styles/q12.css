@@ -6,31 +6,44 @@ body {
     align-items: center;
 }
 
-.box{
+.login {
     position: relative;
-    width: 0;
-    height: 0;
-    background-color: rgb(255, 255, 255);
-    animation: aparecer 5s linear infinite;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    border: 2px solid white;
+    border-radius: 5px;
+    animation: descer 3s ease;
 }
 
-@keyframes aparecer {
-    0%{
-        width: 0px;
-        height: 0px;
-    }
-    50%{
-        width: 100px;
-        height: 100px;
-        background-color: blue  ;
-    }
-    100%{
-        width: 200px;
-        height: 200px;
-        background-color: green;
-    }
-    
+.login > form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: black;
+    font-family:'Righteous', cursive;
 }
+
+.login > div {
+    display: flex;
+    width: fit-content;
+    padding: 5px;    
+}
+
+.buttons > button {
+    margin-left:10px;
+}
+
+@keyframes descer {
+    from{
+        bottom: 1000px;
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+
 
 .home {
     position: absolute;
@@ -47,9 +60,9 @@ body {
 }
 
 .home {
-    font-family: 'Righteous', cursive;
+    font-family:'Righteous', cursive;
     color: black;
-}
+} 
 
 .home:hover {
     background-color: rgb(120, 120, 120);

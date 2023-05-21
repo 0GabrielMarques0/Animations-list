@@ -19,7 +19,7 @@ body {
         transform: rotateZ(0deg);
         background-color: white;
     }
-    12.5%{
+    12%{
         transform: rotateZ(45deg);
         background-color: red;
     }
@@ -27,7 +27,7 @@ body {
         transform: rotateZ(90deg);
         background-color: orange;
     }
-    37.5%{
+    37%{
         transform: rotateZ(135deg);
         background-color: yellow;
     }
@@ -35,7 +35,7 @@ body {
         transform: rotateZ(180deg);
         background-color: gray;
     }
-    62.5%{
+    62%{
         transform: rotateZ(225deg);
         background-color: green;
     }
@@ -43,7 +43,7 @@ body {
         transform: rotateZ(270deg);
         background-color: blue;
     }
-    87.5%{
+    87%{
         transform: rotateZ(315deg);
         background-color: purple;
     }
@@ -54,10 +54,10 @@ body {
 }
 
 .home {
+    position: absolute;
+    top: 80%;
+    right: 10%;
     display: flex;
-    position: fixed;
-    top: 650px;
-    right: 200px;
     justify-content: center;
     align-items: center;
     width: 80px;
