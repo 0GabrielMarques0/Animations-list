@@ -24,13 +24,11 @@ header {
     margin: 0;
 }
 
-
-
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 section {
@@ -58,6 +56,6 @@ section > a {
 section > a:hover {
     background-color: rgb(120, 120, 120);
     color: white;
-    transition: 1.5s;
+    transition: 1.3s;
     transform: rotate(360deg);
 }

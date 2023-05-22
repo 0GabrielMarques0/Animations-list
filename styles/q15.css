@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    animation: quicando 4s ease;
+}
+
+
+@keyframes quicando {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 43%;
+        top: -110px;
+    }
+    50%{
+        left: 0;
+        top: 220px;
+    }
+    75%{
+        left: -43%;
+        top: -210px;
+    }
+    90%{
+        left: -39%;
+        top: -239px;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+.home {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}

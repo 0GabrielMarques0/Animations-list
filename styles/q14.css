@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255) ;
+}
+
+.circle:hover{
+    animation: transform 2s ease;
+}
+
+@keyframes transform {
+    from{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    to{
+        border-radius: 0;
+        width: 200px;
+        height: 100px;
+    }
+}
+
+.home {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home {
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+.home:hover {
+    background-color: rgb(120, 120, 120);
+    transition: 1.5s;
+    transform: rotate(360deg);
+    color: white;
+}
