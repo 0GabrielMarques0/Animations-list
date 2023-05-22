@@ -12,7 +12,7 @@ body {
     height: 200px;
     border-radius: 100px;
     background-color: rgb(255, 255, 255);
-    animation: quicando 4s ease;
+    animation: quicando 5s ease infinite;
 }
 
 
@@ -22,20 +22,20 @@ body {
         top: 0;
     }
     25%{
-        left: 43%;
-        top: -110px;
+        left: 42%;
+        top: 10%;
     }
     50%{
         left: 0;
-        top: 220px;
+        top: -39%;
     }
     75%{
-        left: -43%;
-        top: -210px;
+        left: -42%;
+        top: 30%;
     }
     90%{
-        left: -39%;
-        top: -239px;
+        left: -30%;
+        top: 39%;
     }
     100%{
         left: 0;
