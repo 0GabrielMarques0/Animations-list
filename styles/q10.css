@@ -2,6 +2,12 @@ body {
     background-color: black;
     display: flex;
     height: 100vh;
+}
+
+.icon {
+    width: 100%;
+    height:100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -11,25 +17,20 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    animation: mover 3s linear ;
+    animation: mover 3s linear;
+    animation-fill-mode: forwards;
 }
 
 @keyframes mover  {
     0%{
-        bottom: 0;
-        right: 0;
+        top: 0;
+        left: 0;
         width: 200px;
         height: 200px;
     }
-    50%{
-        bottom: 270px;
-        right: 630px;
-        width: 70px;
-        height: 70px;
-    }
     100%{
-        bottom: 270px;
-        right: 630px;
+        top: -45%;
+        left: -46%;
         width: 70px;
         height: 70px;
     }
